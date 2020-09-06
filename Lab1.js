@@ -3,18 +3,13 @@
 arrayOfEmails = [];
 
 function addEmail(){
-    Var Email = document.getElementById('validationTooltip02');
+    var Email = document.getElementById('validationTooltip02');
     arrayOfEmails.push(Email.value);
     Email.value="";
 
 }
-
-function printEmail() {
-  document.getElementById("values").innerHTML = values.join(", ");
-}
-
 function removeEmail(){
-    arrayOfEmails.pop(validationTooltip02)
+    arrayOfEmails.pop('validationTooltip02')
 }
 
 
