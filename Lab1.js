@@ -17,10 +17,6 @@ function printList(){
 
 //remove fromlist 
 function removeEmail(){
-    if (arrayOfEmails.length == 0)
-    {
-        document.write("There are no emails on the list too delete.");
-    }
     arrayOfEmails.pop('validationTooltip02')
     printList();
 }

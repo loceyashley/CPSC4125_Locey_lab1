@@ -14,27 +14,30 @@
 
   <title>Sign Up Here</title>
   <!--navagation bar -->
-     <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link" href="Lab1.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="SignUp.html">Sign Up</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog</a>
-        </li>
-     </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="Lab1.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="SignUp.html">Sign Up</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+      </div>
+    </div>
+  </nav>
+  <!--title-->
   </head>
   <body>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-    <div container style =" color: blue;"> 
-    <h1 class="display-4; font-weight-bold;">Sign Up For Our Blog</h1> 
+    <div container style =" color: blue;">
+    <h1 class="display-4; font-weight-bold;">Sign Up For Our Blog</h1>
   </div>
 
   <p>
-  Enter your email below to be added to our email list. When you are addded you will recive notificaitons on our new blog post so you won't miss a single one!</p> <p class="font-weight-bold">You may subscribe at anytime.</p><p> We look forward to having you on our team!
+  Enter your email below to be added to our email list. When you are addded you will recive notificaitons on our new blog post so you won't miss a single one!</p> <p class="font-weight-bold">You may un-subscribe at anytime.</p><p> We look forward to having you on our team!
   </p>
 
   <!--getting thier email-->
@@ -58,7 +61,9 @@
   <button class="btn btn-primary" id = "add" type="button" onclick="addEmail();">Submit form</button>
   <button class="btn btn-primary" id = "delete" type="button" onclick="removeEmail();">unsubscribe</button>
 </form>
+<center><p class="font-weight-bold">If you want to unsubscribe and delete the email you just put, simply hit the unsubscribe button</p></center>
   List of Email: <span id="result"></span>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
