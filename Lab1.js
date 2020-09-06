@@ -1,5 +1,4 @@
-<html>
+<script>
 
 
-
-</html>
+</script>
