@@ -4,7 +4,6 @@ arrayOfEmails = [];
 function addEmail(){
     var Email = document.getElementById('validationTooltip02');
     arrayOfEmails.push(Email.value);
-    //update();
     printList();
 }
 
@@ -12,14 +11,10 @@ function addEmail(){
 function printList(){
     for(var i = 0; i < arrayOfEmails.length; i++){
        //document.write("<br>"+arrayOfEmails[i]);
-       document.getElementById("result").innerHTML = arrayOfEmails[i];
+       document.getElementById("result").innerHTML = arrayOfEmails;
     }
 }
 
-//update list
-function update(){
-    arrayOfEmails = arrayOfEmails+addEmail();
-}
 //remove fromlist 
 function removeEmail(){
     if (arrayOfEmails.length == 0)
@@ -27,5 +22,6 @@ function removeEmail(){
         document.write("There are no emails on the list too delete.");
     }
     arrayOfEmails.pop('validationTooltip02')
+    printList();
 }
 
