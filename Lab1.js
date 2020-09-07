@@ -9,10 +9,11 @@ function addEmail(){
 
 //print list 
 function printList(){
-    for(var i = 0; i < arrayOfEmails.length; i++){
+    /*for(var i = 0; i < arrayOfEmails.length; i++){
        //document.write("<br>"+arrayOfEmails[i]);
        document.getElementById("result").innerHTML = arrayOfEmails;
-    }
+    }*/
+    document.getElementById("result").innerHTML = arrayOfEmails;
 }
 
 //remove fromlist 
